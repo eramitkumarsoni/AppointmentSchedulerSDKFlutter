@@ -12,28 +12,21 @@ let package = Package(
             targets: ["AppointmentSchedulerSPM"]
         ),
     ],
-    dependencies: [
-        // Use Firebase as an external dependency to avoid target name conflicts
-        .package(url: "https://github.com/firebase/firebase-ios-sdk.git", from: "10.0.0")
-    ],
+    dependencies: [],
     targets: [
         .target(
             name: "AppointmentSchedulerSPM",
             dependencies: [
                 "App",
                 "Flutter",
-                "FlutterPluginRegistrant",
                 "DKImagePickerController",
                 "DKPhotoGallery",
-                // Reference Firebase from the external package
-                .product(name: "FirebaseCore", package: "firebase-ios-sdk"),
                 "SDWebImage",
                 "SwiftyGif",
                 "audio_session",
                 "connectivity_plus",
                 "file_picker",
                 "file_selector_ios",
-                "firebase_core",
                 "flutter_secure_storage",
                 "get_thumbnail_video",
                 "image_gallery_saver_plus",
@@ -54,20 +47,17 @@ let package = Package(
             path: "Sources/AppointmentSchedulerSPM"
         ),
         
-        // Binary targets for all xcframeworks (Firebase frameworks excluded - using external dependency)
+        // Binary targets
         .binaryTarget(name: "App", path: "Binaries/App.xcframework"),
         .binaryTarget(name: "Flutter", path: "Binaries/Flutter.xcframework"),
-        .binaryTarget(name: "FlutterPluginRegistrant", path: "Binaries/FlutterPluginRegistrant.xcframework"),
         .binaryTarget(name: "DKImagePickerController", path: "Binaries/DKImagePickerController.xcframework"),
         .binaryTarget(name: "DKPhotoGallery", path: "Binaries/DKPhotoGallery.xcframework"),
-        // NOTE: FirebaseCore, FirebaseCoreInternal, and GoogleUtilities removed - using external dependency
         .binaryTarget(name: "SDWebImage", path: "Binaries/SDWebImage.xcframework"),
         .binaryTarget(name: "SwiftyGif", path: "Binaries/SwiftyGif.xcframework"),
         .binaryTarget(name: "audio_session", path: "Binaries/audio_session.xcframework"),
         .binaryTarget(name: "connectivity_plus", path: "Binaries/connectivity_plus.xcframework"),
         .binaryTarget(name: "file_picker", path: "Binaries/file_picker.xcframework"),
         .binaryTarget(name: "file_selector_ios", path: "Binaries/file_selector_ios.xcframework"),
-        .binaryTarget(name: "firebase_core", path: "Binaries/firebase_core.xcframework"),
         .binaryTarget(name: "flutter_secure_storage", path: "Binaries/flutter_secure_storage.xcframework"),
         .binaryTarget(name: "get_thumbnail_video", path: "Binaries/get_thumbnail_video.xcframework"),
         .binaryTarget(name: "image_gallery_saver_plus", path: "Binaries/image_gallery_saver_plus.xcframework"),
