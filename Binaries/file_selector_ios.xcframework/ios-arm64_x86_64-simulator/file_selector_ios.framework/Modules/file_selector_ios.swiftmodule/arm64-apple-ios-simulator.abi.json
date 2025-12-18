@@ -1,0 +1,2565 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "file_selector_ios",
+    "printedName": "file_selector_ios",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Flutter",
+        "printedName": "Flutter",
+        "declKind": "Import",
+        "moduleName": "file_selector_ios",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "ObjectiveC",
+        "printedName": "ObjectiveC",
+        "declKind": "Import",
+        "moduleName": "file_selector_ios"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "file_selector_ios"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PickerCompletionBridge",
+        "printedName": "PickerCompletionBridge",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "completion",
+            "printedName": "completion",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<[Swift.String], any Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<[Swift.String], any Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17file_selector_ios22PickerCompletionBridgeC10completionyys6ResultOySaySSGs5Error_pGcvp",
+            "mangledName": "$s17file_selector_ios22PickerCompletionBridgeC10completionyys6ResultOySaySSGs5Error_pGcvp",
+            "moduleName": "file_selector_ios",
+            "declAttributes": [
+              "Final",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 0,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Result<[Swift.String], any Swift.Error>) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Result",
+                        "printedName": "Swift.Result<[Swift.String], any Swift.Error>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Array",
+                            "printedName": "[Swift.String]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:Sa"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:s6ResultO"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17file_selector_ios22PickerCompletionBridgeC10completionyys6ResultOySaySSGs5Error_pGcvg",
+                "mangledName": "$s17file_selector_ios22PickerCompletionBridgeC10completionyys6ResultOySaySSGs5Error_pGcvg",
+                "moduleName": "file_selector_ios",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "owner",
+            "printedName": "owner",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FileSelectorPlugin",
+                "printedName": "file_selector_ios.FileSelectorPlugin",
+                "usr": "c:@M@file_selector_ios@objc(cs)FileSelectorPlugin"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17file_selector_ios22PickerCompletionBridgeC5ownerAA18FileSelectorPluginCvp",
+            "mangledName": "$s17file_selector_ios22PickerCompletionBridgeC5ownerAA18FileSelectorPluginCvp",
+            "moduleName": "file_selector_ios",
+            "declAttributes": [
+              "Final",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "RawDocComment"
+            ],
+            "fixedbinaryorder": 1,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FileSelectorPlugin",
+                    "printedName": "file_selector_ios.FileSelectorPlugin",
+                    "usr": "c:@M@file_selector_ios@objc(cs)FileSelectorPlugin"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17file_selector_ios22PickerCompletionBridgeC5ownerAA18FileSelectorPluginCvg",
+                "mangledName": "$s17file_selector_ios22PickerCompletionBridgeC5ownerAA18FileSelectorPluginCvg",
+                "moduleName": "file_selector_ios",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(completion:owner:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PickerCompletionBridge",
+                "printedName": "file_selector_ios.PickerCompletionBridge",
+                "usr": "c:@M@file_selector_ios@objc(cs)PickerCompletionBridge"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<[Swift.String], any Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<[Swift.String], any Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FileSelectorPlugin",
+                "printedName": "file_selector_ios.FileSelectorPlugin",
+                "usr": "c:@M@file_selector_ios@objc(cs)FileSelectorPlugin"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:17file_selector_ios22PickerCompletionBridgeC10completion5ownerACys6ResultOySaySSGs5Error_pGc_AA18FileSelectorPluginCtcfc",
+            "mangledName": "$s17file_selector_ios22PickerCompletionBridgeC10completion5ownerACys6ResultOySaySSGs5Error_pGc_AA18FileSelectorPluginCtcfc",
+            "moduleName": "file_selector_ios",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "documentPicker",
+            "printedName": "documentPicker(_:didPickDocumentsAt:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIDocumentPickerViewController",
+                "printedName": "UIKit.UIDocumentPickerViewController",
+                "usr": "c:objc(cs)UIDocumentPickerViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Foundation.URL]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@file_selector_ios@objc(cs)PickerCompletionBridge(im)documentPicker:didPickDocumentsAtURLs:",
+            "mangledName": "$s17file_selector_ios22PickerCompletionBridgeC08documentD0_18didPickDocumentsAtySo010UIDocumentD14ViewControllerC_Say10Foundation3URLVGtF",
+            "moduleName": "file_selector_ios",
+            "isOpen": true,
+            "objc_name": "documentPicker:didPickDocumentsAtURLs:",
+            "declAttributes": [
+              "ObjC",
+              "Preconcurrency",
+              "Custom"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "documentPickerWasCancelled",
+            "printedName": "documentPickerWasCancelled(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIDocumentPickerViewController",
+                "printedName": "UIKit.UIDocumentPickerViewController",
+                "usr": "c:objc(cs)UIDocumentPickerViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@file_selector_ios@objc(cs)PickerCompletionBridge(im)documentPickerWasCancelled:",
+            "mangledName": "$s17file_selector_ios22PickerCompletionBridgeC08documentD12WasCancelledyySo010UIDocumentD14ViewControllerCF",
+            "moduleName": "file_selector_ios",
+            "isOpen": true,
+            "objc_name": "documentPickerWasCancelled:",
+            "declAttributes": [
+              "ObjC",
+              "Preconcurrency",
+              "Custom"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PickerCompletionBridge",
+                "printedName": "file_selector_ios.PickerCompletionBridge",
+                "usr": "c:@M@file_selector_ios@objc(cs)PickerCompletionBridge"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@file_selector_ios@objc(cs)PickerCompletionBridge(im)init",
+            "mangledName": "$s17file_selector_ios22PickerCompletionBridgeCACycfc",
+            "moduleName": "file_selector_ios",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@file_selector_ios@objc(cs)PickerCompletionBridge",
+        "mangledName": "$s17file_selector_ios22PickerCompletionBridgeC",
+        "moduleName": "file_selector_ios",
+        "isOpen": true,
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FileSelectorPlugin",
+        "printedName": "FileSelectorPlugin",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "pendingCompletions",
+            "printedName": "pendingCompletions",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Set",
+                "printedName": "Swift.Set<file_selector_ios.PickerCompletionBridge>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PickerCompletionBridge",
+                    "printedName": "file_selector_ios.PickerCompletionBridge",
+                    "usr": "c:@M@file_selector_ios@objc(cs)PickerCompletionBridge"
+                  }
+                ],
+                "usr": "s:Sh"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17file_selector_ios18FileSelectorPluginC18pendingCompletionsShyAA22PickerCompletionBridgeCGvp",
+            "mangledName": "$s17file_selector_ios18FileSelectorPluginC18pendingCompletionsShyAA22PickerCompletionBridgeCGvp",
+            "moduleName": "file_selector_ios",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Set",
+                    "printedName": "Swift.Set<file_selector_ios.PickerCompletionBridge>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PickerCompletionBridge",
+                        "printedName": "file_selector_ios.PickerCompletionBridge",
+                        "usr": "c:@M@file_selector_ios@objc(cs)PickerCompletionBridge"
+                      }
+                    ],
+                    "usr": "s:Sh"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17file_selector_ios18FileSelectorPluginC18pendingCompletionsShyAA22PickerCompletionBridgeCGvg",
+                "mangledName": "$s17file_selector_ios18FileSelectorPluginC18pendingCompletionsShyAA22PickerCompletionBridgeCGvg",
+                "moduleName": "file_selector_ios",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Set",
+                    "printedName": "Swift.Set<file_selector_ios.PickerCompletionBridge>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PickerCompletionBridge",
+                        "printedName": "file_selector_ios.PickerCompletionBridge",
+                        "usr": "c:@M@file_selector_ios@objc(cs)PickerCompletionBridge"
+                      }
+                    ],
+                    "usr": "s:Sh"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17file_selector_ios18FileSelectorPluginC18pendingCompletionsShyAA22PickerCompletionBridgeCGvs",
+                "mangledName": "$s17file_selector_ios18FileSelectorPluginC18pendingCompletionsShyAA22PickerCompletionBridgeCGvs",
+                "moduleName": "file_selector_ios",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17file_selector_ios18FileSelectorPluginC18pendingCompletionsShyAA22PickerCompletionBridgeCGvM",
+                "mangledName": "$s17file_selector_ios18FileSelectorPluginC18pendingCompletionsShyAA22PickerCompletionBridgeCGvM",
+                "moduleName": "file_selector_ios",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "documentPickerViewControllerOverride",
+            "printedName": "documentPickerViewControllerOverride",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIDocumentPickerViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIDocumentPickerViewController",
+                    "printedName": "UIKit.UIDocumentPickerViewController",
+                    "usr": "c:objc(cs)UIDocumentPickerViewController"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17file_selector_ios18FileSelectorPluginC36documentPickerViewControllerOverrideSo010UIDocumenthiJ0CSgvp",
+            "mangledName": "$s17file_selector_ios18FileSelectorPluginC36documentPickerViewControllerOverrideSo010UIDocumenthiJ0CSgvp",
+            "moduleName": "file_selector_ios",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIDocumentPickerViewController?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIDocumentPickerViewController",
+                        "printedName": "UIKit.UIDocumentPickerViewController",
+                        "usr": "c:objc(cs)UIDocumentPickerViewController"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17file_selector_ios18FileSelectorPluginC36documentPickerViewControllerOverrideSo010UIDocumenthiJ0CSgvg",
+                "mangledName": "$s17file_selector_ios18FileSelectorPluginC36documentPickerViewControllerOverrideSo010UIDocumenthiJ0CSgvg",
+                "moduleName": "file_selector_ios",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIDocumentPickerViewController?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIDocumentPickerViewController",
+                        "printedName": "UIKit.UIDocumentPickerViewController",
+                        "usr": "c:objc(cs)UIDocumentPickerViewController"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17file_selector_ios18FileSelectorPluginC36documentPickerViewControllerOverrideSo010UIDocumenthiJ0CSgvs",
+                "mangledName": "$s17file_selector_ios18FileSelectorPluginC36documentPickerViewControllerOverrideSo010UIDocumenthiJ0CSgvs",
+                "moduleName": "file_selector_ios",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17file_selector_ios18FileSelectorPluginC36documentPickerViewControllerOverrideSo010UIDocumenthiJ0CSgvM",
+                "mangledName": "$s17file_selector_ios18FileSelectorPluginC36documentPickerViewControllerOverrideSo010UIDocumenthiJ0CSgvM",
+                "moduleName": "file_selector_ios",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "viewPresenterOverride",
+            "printedName": "viewPresenterOverride",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any file_selector_ios.ViewPresenter)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ViewPresenter",
+                    "printedName": "any file_selector_ios.ViewPresenter",
+                    "usr": "s:17file_selector_ios13ViewPresenterP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17file_selector_ios18FileSelectorPluginC21viewPresenterOverrideAA04ViewH0_pSgvp",
+            "mangledName": "$s17file_selector_ios18FileSelectorPluginC21viewPresenterOverrideAA04ViewH0_pSgvp",
+            "moduleName": "file_selector_ios",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any file_selector_ios.ViewPresenter)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ViewPresenter",
+                        "printedName": "any file_selector_ios.ViewPresenter",
+                        "usr": "s:17file_selector_ios13ViewPresenterP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17file_selector_ios18FileSelectorPluginC21viewPresenterOverrideAA04ViewH0_pSgvg",
+                "mangledName": "$s17file_selector_ios18FileSelectorPluginC21viewPresenterOverrideAA04ViewH0_pSgvg",
+                "moduleName": "file_selector_ios",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any file_selector_ios.ViewPresenter)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ViewPresenter",
+                        "printedName": "any file_selector_ios.ViewPresenter",
+                        "usr": "s:17file_selector_ios13ViewPresenterP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17file_selector_ios18FileSelectorPluginC21viewPresenterOverrideAA04ViewH0_pSgvs",
+                "mangledName": "$s17file_selector_ios18FileSelectorPluginC21viewPresenterOverrideAA04ViewH0_pSgvs",
+                "moduleName": "file_selector_ios",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17file_selector_ios18FileSelectorPluginC21viewPresenterOverrideAA04ViewH0_pSgvM",
+                "mangledName": "$s17file_selector_ios18FileSelectorPluginC21viewPresenterOverrideAA04ViewH0_pSgvM",
+                "moduleName": "file_selector_ios",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "register",
+            "printedName": "register(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FlutterPluginRegistrar",
+                "printedName": "any Flutter.FlutterPluginRegistrar",
+                "usr": "c:objc(pl)FlutterPluginRegistrar"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@file_selector_ios@objc(cs)FileSelectorPlugin(cm)registerWithRegistrar:",
+            "mangledName": "$s17file_selector_ios18FileSelectorPluginC8register4withySo07FlutterF9Registrar_p_tFZ",
+            "moduleName": "file_selector_ios",
+            "static": true,
+            "objc_name": "registerWithRegistrar:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "openFile",
+            "printedName": "openFile(config:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FileSelectorConfig",
+                "printedName": "file_selector_ios.FileSelectorConfig",
+                "usr": "s:17file_selector_ios18FileSelectorConfigV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<[Swift.String], any Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<[Swift.String], any Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17file_selector_ios18FileSelectorPluginC04openD06config10completionyAA0dE6ConfigV_ys6ResultOySaySSGs5Error_pGctF",
+            "mangledName": "$s17file_selector_ios18FileSelectorPluginC04openD06config10completionyAA0dE6ConfigV_ys6ResultOySaySSGs5Error_pGctF",
+            "moduleName": "file_selector_ios",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FileSelectorPlugin",
+                "printedName": "file_selector_ios.FileSelectorPlugin",
+                "usr": "c:@M@file_selector_ios@objc(cs)FileSelectorPlugin"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@file_selector_ios@objc(cs)FileSelectorPlugin(im)init",
+            "mangledName": "$s17file_selector_ios18FileSelectorPluginCACycfc",
+            "moduleName": "file_selector_ios",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@file_selector_ios@objc(cs)FileSelectorPlugin",
+        "mangledName": "$s17file_selector_ios18FileSelectorPluginC",
+        "moduleName": "file_selector_ios",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "FileSelectorApi",
+            "printedName": "FileSelectorApi",
+            "usr": "s:17file_selector_ios15FileSelectorApiP",
+            "mangledName": "$s17file_selector_ios15FileSelectorApiP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "file_selector_ios",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Flutter",
+        "printedName": "Flutter",
+        "declKind": "Import",
+        "moduleName": "file_selector_ios"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PigeonError",
+        "printedName": "PigeonError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "code",
+            "printedName": "code",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17file_selector_ios11PigeonErrorC4codeSSvp",
+            "mangledName": "$s17file_selector_ios11PigeonErrorC4codeSSvp",
+            "moduleName": "file_selector_ios",
+            "declAttributes": [
+              "Final",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 0,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17file_selector_ios11PigeonErrorC4codeSSvg",
+                "mangledName": "$s17file_selector_ios11PigeonErrorC4codeSSvg",
+                "moduleName": "file_selector_ios",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent",
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "message",
+            "printedName": "message",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17file_selector_ios11PigeonErrorC7messageSSSgvp",
+            "mangledName": "$s17file_selector_ios11PigeonErrorC7messageSSSgvp",
+            "moduleName": "file_selector_ios",
+            "declAttributes": [
+              "Final",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 1,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17file_selector_ios11PigeonErrorC7messageSSSgvg",
+                "mangledName": "$s17file_selector_ios11PigeonErrorC7messageSSSgvg",
+                "moduleName": "file_selector_ios",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent",
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "details",
+            "printedName": "details",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any Swift.Sendable)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Sendable",
+                    "printedName": "any Swift.Sendable",
+                    "usr": "s:s8SendableP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17file_selector_ios11PigeonErrorC7detailss8Sendable_pSgvp",
+            "mangledName": "$s17file_selector_ios11PigeonErrorC7detailss8Sendable_pSgvp",
+            "moduleName": "file_selector_ios",
+            "declAttributes": [
+              "Final",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 2,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any Swift.Sendable)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Sendable",
+                        "printedName": "any Swift.Sendable",
+                        "usr": "s:s8SendableP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17file_selector_ios11PigeonErrorC7detailss8Sendable_pSgvg",
+                "mangledName": "$s17file_selector_ios11PigeonErrorC7detailss8Sendable_pSgvg",
+                "moduleName": "file_selector_ios",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent",
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(code:message:details:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PigeonError",
+                "printedName": "file_selector_ios.PigeonError",
+                "usr": "s:17file_selector_ios11PigeonErrorC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any Swift.Sendable)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Sendable",
+                    "printedName": "any Swift.Sendable",
+                    "usr": "s:s8SendableP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:17file_selector_ios11PigeonErrorC4code7message7detailsACSS_SSSgs8Sendable_pSgtcfc",
+            "mangledName": "$s17file_selector_ios11PigeonErrorC4code7message7detailsACSS_SSSgs8Sendable_pSgtcfc",
+            "moduleName": "file_selector_ios",
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "localizedDescription",
+            "printedName": "localizedDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17file_selector_ios11PigeonErrorC20localizedDescriptionSSvp",
+            "mangledName": "$s17file_selector_ios11PigeonErrorC20localizedDescriptionSSvp",
+            "moduleName": "file_selector_ios",
+            "declAttributes": [
+              "Final"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17file_selector_ios11PigeonErrorC20localizedDescriptionSSvg",
+                "mangledName": "$s17file_selector_ios11PigeonErrorC20localizedDescriptionSSvg",
+                "moduleName": "file_selector_ios",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:17file_selector_ios11PigeonErrorC",
+        "mangledName": "$s17file_selector_ios11PigeonErrorC",
+        "moduleName": "file_selector_ios",
+        "declAttributes": [
+          "Final",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "Function",
+        "name": "deepEqualsmessages",
+        "printedName": "deepEqualsmessages(_:_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Bool",
+            "printedName": "Swift.Bool",
+            "usr": "s:Sb"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "Any?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "Any"
+              }
+            ],
+            "usr": "s:Sq"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "Any?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "Any"
+              }
+            ],
+            "usr": "s:Sq"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:17file_selector_ios18deepEqualsmessagesySbypSg_ACtF",
+        "mangledName": "$s17file_selector_ios18deepEqualsmessagesySbypSg_ACtF",
+        "moduleName": "file_selector_ios",
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "deepHashmessages",
+        "printedName": "deepHashmessages(value:hasher:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "Any?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "Any"
+              }
+            ],
+            "usr": "s:Sq"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Hasher",
+            "printedName": "Swift.Hasher",
+            "paramValueOwnership": "InOut",
+            "usr": "s:s6HasherV"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:17file_selector_ios16deepHashmessages5value6hasheryypSg_s6HasherVztF",
+        "mangledName": "$s17file_selector_ios16deepHashmessages5value6hasheryypSg_s6HasherVztF",
+        "moduleName": "file_selector_ios",
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FileSelectorConfig",
+        "printedName": "FileSelectorConfig",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "utis",
+            "printedName": "utis",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17file_selector_ios18FileSelectorConfigV4utisSaySSGvp",
+            "mangledName": "$s17file_selector_ios18FileSelectorConfigV4utisSaySSGvp",
+            "moduleName": "file_selector_ios",
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 0,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17file_selector_ios18FileSelectorConfigV4utisSaySSGvg",
+                "mangledName": "$s17file_selector_ios18FileSelectorConfigV4utisSaySSGvg",
+                "moduleName": "file_selector_ios",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17file_selector_ios18FileSelectorConfigV4utisSaySSGvs",
+                "mangledName": "$s17file_selector_ios18FileSelectorConfigV4utisSaySSGvs",
+                "moduleName": "file_selector_ios",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17file_selector_ios18FileSelectorConfigV4utisSaySSGvM",
+                "mangledName": "$s17file_selector_ios18FileSelectorConfigV4utisSaySSGvM",
+                "moduleName": "file_selector_ios",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "allowMultiSelection",
+            "printedName": "allowMultiSelection",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17file_selector_ios18FileSelectorConfigV19allowMultiSelectionSbvp",
+            "mangledName": "$s17file_selector_ios18FileSelectorConfigV19allowMultiSelectionSbvp",
+            "moduleName": "file_selector_ios",
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17file_selector_ios18FileSelectorConfigV19allowMultiSelectionSbvg",
+                "mangledName": "$s17file_selector_ios18FileSelectorConfigV19allowMultiSelectionSbvg",
+                "moduleName": "file_selector_ios",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17file_selector_ios18FileSelectorConfigV19allowMultiSelectionSbvs",
+                "mangledName": "$s17file_selector_ios18FileSelectorConfigV19allowMultiSelectionSbvs",
+                "moduleName": "file_selector_ios",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17file_selector_ios18FileSelectorConfigV19allowMultiSelectionSbvM",
+                "mangledName": "$s17file_selector_ios18FileSelectorConfigV19allowMultiSelectionSbvM",
+                "moduleName": "file_selector_ios",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "fromList",
+            "printedName": "fromList(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "file_selector_ios.FileSelectorConfig?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FileSelectorConfig",
+                    "printedName": "file_selector_ios.FileSelectorConfig",
+                    "usr": "s:17file_selector_ios18FileSelectorConfigV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Any?]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Any?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17file_selector_ios18FileSelectorConfigV8fromListyACSgSayypSgGFZ",
+            "mangledName": "$s17file_selector_ios18FileSelectorConfigV8fromListyACSgSayypSgGFZ",
+            "moduleName": "file_selector_ios",
+            "static": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "toList",
+            "printedName": "toList()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Any?]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Any?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17file_selector_ios18FileSelectorConfigV6toListSayypSgGyF",
+            "mangledName": "$s17file_selector_ios18FileSelectorConfigV6toListSayypSgGyF",
+            "moduleName": "file_selector_ios",
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FileSelectorConfig",
+                "printedName": "file_selector_ios.FileSelectorConfig",
+                "usr": "s:17file_selector_ios18FileSelectorConfigV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FileSelectorConfig",
+                "printedName": "file_selector_ios.FileSelectorConfig",
+                "usr": "s:17file_selector_ios18FileSelectorConfigV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17file_selector_ios18FileSelectorConfigV2eeoiySbAC_ACtFZ",
+            "mangledName": "$s17file_selector_ios18FileSelectorConfigV2eeoiySbAC_ACtFZ",
+            "moduleName": "file_selector_ios",
+            "static": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17file_selector_ios18FileSelectorConfigV4hash4intoys6HasherVz_tF",
+            "mangledName": "$s17file_selector_ios18FileSelectorConfigV4hash4intoys6HasherVz_tF",
+            "moduleName": "file_selector_ios",
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(utis:allowMultiSelection:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FileSelectorConfig",
+                "printedName": "file_selector_ios.FileSelectorConfig",
+                "usr": "s:17file_selector_ios18FileSelectorConfigV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:17file_selector_ios18FileSelectorConfigV4utis19allowMultiSelectionACSaySSG_Sbtcfc",
+            "mangledName": "$s17file_selector_ios18FileSelectorConfigV4utis19allowMultiSelectionACSaySSG_Sbtcfc",
+            "moduleName": "file_selector_ios",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17file_selector_ios18FileSelectorConfigV9hashValueSivp",
+            "mangledName": "$s17file_selector_ios18FileSelectorConfigV9hashValueSivp",
+            "moduleName": "file_selector_ios",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17file_selector_ios18FileSelectorConfigV9hashValueSivg",
+                "mangledName": "$s17file_selector_ios18FileSelectorConfigV9hashValueSivg",
+                "moduleName": "file_selector_ios",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:17file_selector_ios18FileSelectorConfigV",
+        "mangledName": "$s17file_selector_ios18FileSelectorConfigV",
+        "moduleName": "file_selector_ios",
+        "declAttributes": [
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MessagesPigeonCodec",
+        "printedName": "MessagesPigeonCodec",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MessagesPigeonCodec",
+                "printedName": "file_selector_ios.MessagesPigeonCodec",
+                "usr": "c:@M@file_selector_ios@objc(cs)MessagesPigeonCodec"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17file_selector_ios19MessagesPigeonCodecC6sharedACvpZ",
+            "mangledName": "$s17file_selector_ios19MessagesPigeonCodecC6sharedACvpZ",
+            "moduleName": "file_selector_ios",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MessagesPigeonCodec",
+                    "printedName": "file_selector_ios.MessagesPigeonCodec",
+                    "usr": "c:@M@file_selector_ios@objc(cs)MessagesPigeonCodec"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17file_selector_ios19MessagesPigeonCodecC6sharedACvgZ",
+                "mangledName": "$s17file_selector_ios19MessagesPigeonCodecC6sharedACvgZ",
+                "moduleName": "file_selector_ios",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MessagesPigeonCodec",
+                "printedName": "file_selector_ios.MessagesPigeonCodec",
+                "usr": "c:@M@file_selector_ios@objc(cs)MessagesPigeonCodec"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@file_selector_ios@objc(cs)MessagesPigeonCodec(im)init",
+            "mangledName": "$s17file_selector_ios19MessagesPigeonCodecCACycfc",
+            "moduleName": "file_selector_ios",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@file_selector_ios@objc(cs)MessagesPigeonCodec",
+        "mangledName": "$s17file_selector_ios19MessagesPigeonCodecC",
+        "moduleName": "file_selector_ios",
+        "isOpen": true,
+        "declAttributes": [
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)FlutterStandardMessageCodec",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "Flutter.FlutterStandardMessageCodec",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FileSelectorApi",
+        "printedName": "FileSelectorApi",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "openFile",
+            "printedName": "openFile(config:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FileSelectorConfig",
+                "printedName": "file_selector_ios.FileSelectorConfig",
+                "usr": "s:17file_selector_ios18FileSelectorConfigV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<[Swift.String], any Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<[Swift.String], any Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17file_selector_ios15FileSelectorApiP04openD06config10completionyAA0dE6ConfigV_ys6ResultOySaySSGs5Error_pGctF",
+            "mangledName": "$s17file_selector_ios15FileSelectorApiP04openD06config10completionyAA0dE6ConfigV_ys6ResultOySaySSGs5Error_pGctF",
+            "moduleName": "file_selector_ios",
+            "genericSig": "<τ_0_0 where τ_0_0 : file_selector_ios.FileSelectorApi>",
+            "sugared_genericSig": "<Self where Self : file_selector_ios.FileSelectorApi>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:17file_selector_ios15FileSelectorApiP",
+        "mangledName": "$s17file_selector_ios15FileSelectorApiP",
+        "moduleName": "file_selector_ios",
+        "declAttributes": [
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FileSelectorApiSetup",
+        "printedName": "FileSelectorApiSetup",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "codec",
+            "printedName": "codec",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FlutterStandardMessageCodec",
+                "printedName": "Flutter.FlutterStandardMessageCodec",
+                "usr": "c:objc(cs)FlutterStandardMessageCodec"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17file_selector_ios20FileSelectorApiSetupC5codecSo27FlutterStandardMessageCodecCvpZ",
+            "mangledName": "$s17file_selector_ios20FileSelectorApiSetupC5codecSo27FlutterStandardMessageCodecCvpZ",
+            "moduleName": "file_selector_ios",
+            "static": true,
+            "declAttributes": [
+              "Final"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FlutterStandardMessageCodec",
+                    "printedName": "Flutter.FlutterStandardMessageCodec",
+                    "usr": "c:objc(cs)FlutterStandardMessageCodec"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17file_selector_ios20FileSelectorApiSetupC5codecSo27FlutterStandardMessageCodecCvgZ",
+                "mangledName": "$s17file_selector_ios20FileSelectorApiSetupC5codecSo27FlutterStandardMessageCodecCvgZ",
+                "moduleName": "file_selector_ios",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "setUp",
+            "printedName": "setUp(binaryMessenger:api:messageChannelSuffix:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FlutterBinaryMessenger",
+                "printedName": "any Flutter.FlutterBinaryMessenger",
+                "usr": "c:objc(pl)FlutterBinaryMessenger"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any file_selector_ios.FileSelectorApi)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FileSelectorApi",
+                    "printedName": "any file_selector_ios.FileSelectorApi",
+                    "usr": "s:17file_selector_ios15FileSelectorApiP"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17file_selector_ios20FileSelectorApiSetupC5setUp15binaryMessenger3api20messageChannelSuffixySo013FlutterBinaryK0_p_AA0deF0_pSgSStFZ",
+            "mangledName": "$s17file_selector_ios20FileSelectorApiSetupC5setUp15binaryMessenger3api20messageChannelSuffixySo013FlutterBinaryK0_p_AA0deF0_pSgSStFZ",
+            "moduleName": "file_selector_ios",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FileSelectorApiSetup",
+                "printedName": "file_selector_ios.FileSelectorApiSetup",
+                "usr": "s:17file_selector_ios20FileSelectorApiSetupC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:17file_selector_ios20FileSelectorApiSetupCACycfc",
+            "mangledName": "$s17file_selector_ios20FileSelectorApiSetupCACycfc",
+            "moduleName": "file_selector_ios",
+            "implicit": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:17file_selector_ios20FileSelectorApiSetupC",
+        "mangledName": "$s17file_selector_ios20FileSelectorApiSetupC",
+        "moduleName": "file_selector_ios",
+        "isOpen": true,
+        "declAttributes": [
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "file_selector_ios",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ViewPresenter",
+        "printedName": "ViewPresenter",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "present",
+            "printedName": "present(_:animated:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17file_selector_ios13ViewPresenterP7present_8animated10completionySo16UIViewControllerC_SbyycSgtF",
+            "mangledName": "$s17file_selector_ios13ViewPresenterP7present_8animated10completionySo16UIViewControllerC_SbyycSgtF",
+            "moduleName": "file_selector_ios",
+            "genericSig": "<τ_0_0 where τ_0_0 : file_selector_ios.ViewPresenter>",
+            "sugared_genericSig": "<Self where Self : file_selector_ios.ViewPresenter>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:17file_selector_ios13ViewPresenterP",
+        "mangledName": "$s17file_selector_ios13ViewPresenterP",
+        "moduleName": "file_selector_ios",
+        "declAttributes": [
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UIViewController",
+        "printedName": "UIViewController",
+        "declKind": "Class",
+        "usr": "c:objc(cs)UIViewController",
+        "moduleName": "UIKit",
+        "isOpen": true,
+        "intro_iOS": "2.0",
+        "objc_name": "UIViewController",
+        "declAttributes": [
+          "Preconcurrency",
+          "Available",
+          "ObjC",
+          "NonSendable",
+          "Custom",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)UIResponder",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ViewPresenter",
+            "printedName": "ViewPresenter",
+            "usr": "s:17file_selector_ios13ViewPresenterP",
+            "mangledName": "$s17file_selector_ios13ViewPresenterP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/amitsoni\/.pub-cache\/hosted\/pub.dev\/file_selector_ios-0.5.3+4\/ios\/file_selector_ios\/Sources\/file_selector_ios\/FileSelectorPlugin.swift",
+      "kind": "Array",
+      "offset": 1608,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/amitsoni\/.pub-cache\/hosted\/pub.dev\/file_selector_ios-0.5.3+4\/ios\/file_selector_ios\/Sources\/file_selector_ios\/messages.g.swift",
+      "kind": "StringLiteral",
+      "offset": 5987,
+      "length": 2,
+      "value": "\"\""
+    }
+  ]
+}

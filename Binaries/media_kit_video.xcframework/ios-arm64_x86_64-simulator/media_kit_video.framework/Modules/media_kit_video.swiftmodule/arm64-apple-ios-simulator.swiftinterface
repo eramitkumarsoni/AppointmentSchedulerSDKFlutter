@@ -1,0 +1,15 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name media_kit_video
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
+import Flutter
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_exported import media_kit_video
+@objc @_inheritsConvenienceInitializers public class MediaKitVideoPlugin : ObjectiveC.NSObject, Flutter.FlutterPlugin {
+  @objc public static func register(with _: any Flutter.FlutterPluginRegistrar)
+  @objc override dynamic public init()
+  @objc deinit
+}
