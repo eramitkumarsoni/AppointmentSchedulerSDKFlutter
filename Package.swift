@@ -2,20 +2,20 @@
 import PackageDescription
 
 let package = Package(
-    name: "AppointmentSchedulerSPM",
+    name: "AppointmentSchedulerSDKFlutter",
     platforms: [
         .iOS(.v13)
     ],
     products: [
         .library(
-            name: "AppointmentSchedulerSPM",
-            targets: ["AppointmentSchedulerSPM"]
+            name: "AppointmentSchedulerSDKFlutter",
+            targets: ["AppointmentSchedulerSDKFlutter"]
         ),
     ],
     dependencies: [],
     targets: [
         .target(
-            name: "AppointmentSchedulerSPM",
+            name: "AppointmentSchedulerSDKFlutter",
             dependencies: [
                 "App",
                 "Flutter",
