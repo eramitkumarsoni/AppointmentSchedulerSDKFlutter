@@ -44,7 +44,7 @@ let package = Package(
                 "volume_controller",
                 "wakelock_plus"
             ],
-            path: "Sources/AppointmentSchedulerSPM"
+            path: "Sources/AppointmentSchedulerSDKFlutter"
         ),
         
         // Binary targets
