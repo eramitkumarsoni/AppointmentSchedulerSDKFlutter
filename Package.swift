@@ -12,7 +12,10 @@ let package = Package(
             targets: ["AppointmentSchedulerSPM"]
         ),
     ],
-    dependencies: [],
+    dependencies: [
+        // Use Firebase as an external dependency to avoid target name conflicts
+        .package(url: "https://github.com/firebase/firebase-ios-sdk.git", from: "10.0.0")
+    ],
     targets: [
         .target(
             name: "AppointmentSchedulerSPM",
@@ -22,9 +25,8 @@ let package = Package(
                 "FlutterPluginRegistrant",
                 "DKImagePickerController",
                 "DKPhotoGallery",
-                "FirebaseCore",
-                "FirebaseCoreInternal",
-                "GoogleUtilities",
+                // Reference Firebase from the external package
+                .product(name: "FirebaseCore", package: "firebase-ios-sdk"),
                 "SDWebImage",
                 "SwiftyGif",
                 "audio_session",
@@ -52,15 +54,13 @@ let package = Package(
             path: "Sources/AppointmentSchedulerSPM"
         ),
         
-        // Binary targets for all xcframeworks
+        // Binary targets for all xcframeworks (Firebase frameworks excluded - using external dependency)
         .binaryTarget(name: "App", path: "Binaries/App.xcframework"),
         .binaryTarget(name: "Flutter", path: "Binaries/Flutter.xcframework"),
         .binaryTarget(name: "FlutterPluginRegistrant", path: "Binaries/FlutterPluginRegistrant.xcframework"),
         .binaryTarget(name: "DKImagePickerController", path: "Binaries/DKImagePickerController.xcframework"),
         .binaryTarget(name: "DKPhotoGallery", path: "Binaries/DKPhotoGallery.xcframework"),
-        .binaryTarget(name: "FirebaseCore", path: "Binaries/FirebaseCore.xcframework"),
-        .binaryTarget(name: "FirebaseCoreInternal", path: "Binaries/FirebaseCoreInternal.xcframework"),
-        .binaryTarget(name: "GoogleUtilities", path: "Binaries/GoogleUtilities.xcframework"),
+        // NOTE: FirebaseCore, FirebaseCoreInternal, and GoogleUtilities removed - using external dependency
         .binaryTarget(name: "SDWebImage", path: "Binaries/SDWebImage.xcframework"),
         .binaryTarget(name: "SwiftyGif", path: "Binaries/SwiftyGif.xcframework"),
         .binaryTarget(name: "audio_session", path: "Binaries/audio_session.xcframework"),
