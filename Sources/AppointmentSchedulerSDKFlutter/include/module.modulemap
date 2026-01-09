@@ -1,0 +1,5 @@
+module AppointmentSchedulerSDKFlutter {
+    umbrella header "AppointmentSchedulerSDKFlutter.h"
+    export *
+    module * { export * }
+}

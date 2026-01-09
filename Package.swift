@@ -49,6 +49,7 @@ let package = Package(
                 "wakelock_plus"
             ],
             path: "Sources/AppointmentSchedulerSDKFlutter",
+            publicHeadersPath: "include",
             linkerSettings: [
                 .linkedFramework("UIKit"),
                 .linkedFramework("Foundation"),
