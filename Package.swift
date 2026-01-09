@@ -48,7 +48,12 @@ let package = Package(
                 "volume_controller",
                 "wakelock_plus"
             ],
-            path: "Sources/AppointmentSchedulerSDKFlutter"
+            path: "Sources/AppointmentSchedulerSDKFlutter",
+            linkerSettings: [
+                .linkedFramework("UIKit"),
+                .linkedFramework("Foundation"),
+                .linkedFramework("CoreGraphics")
+            ]
         ),
         
         // Binary targets
