@@ -1,241 +1,278 @@
-# Appointment Scheduler SDK Flutter - SPM Package
+# Appointment Scheduler SPM - Quick Setup for iOS Developers
 
-A Swift Package Manager (SPM) package containing the Appointment Scheduler Flutter SDK for iOS integration.
+## 🚀 One-Line Setup (Recommended)
 
-## 📦 Installation
+If your team lead provided you with a `team_credentials.sh` file:
 
-### Using Xcode
+```bash
+chmod +x spm_auth_setup.sh && ./spm_auth_setup.sh
+```
 
-1. **Open your iOS project in Xcode**
-2. **Go to**: `File` → `Add Package Dependencies...`
-3. **Enter the repository URL**:
+That's it! The script will handle everything automatically.
+
+---
+
+## 📋 What You Need
+
+1. This SPM package (you probably already have it)
+2. Team credentials file OR your personal Cadmium Git token
+3. 2 minutes of your time ⏱️
+
+---
+
+## 🔧 Setup Methods
+
+### Method 1: Using Team Credentials (Easiest - Recommended)
+
+**If your team lead gave you a `team_credentials.sh` file:**
+
+1. **Place the file** in this directory (same folder as this README)
+
+2. **Run the setup script:**
+   ```bash
+   ./spm_auth_setup.sh
    ```
-   https://github.com/eramitkumarsoni/AppointmentSchedulerSDKFlutter.git
+
+3. **Select option 1** when prompted
+
+4. **Done!** ✅ You can now add the package in Xcode
+
+---
+
+### Method 2: Using Personal Credentials
+
+**If you want to use your own Cadmium Git token:**
+
+1. **Get your access token:**
+   - Go to https://git.gocadmium.dev
+   - Navigate to: Settings → Access Tokens
+   - Create a token with "read_repository" permission
+   - Copy the token
+
+2. **Run the setup script:**
+   ```bash
+   ./spm_auth_setup.sh
    ```
-4. **Select version**: `1.3.0` (or `main` branch for latest)
-5. **Click**: `Add Package`
 
-### Using Package.swift
+3. **Select option 2** and enter your credentials
 
-Add the following to your `Package.swift` file:
+4. **Done!** ✅
+
+---
+
+## 📱 Adding Package to Your iOS Project
+
+Once setup is complete:
+
+### In Xcode:
+
+1. Open your iOS project
+2. **File** → **Add Package Dependencies...**
+3. Paste this URL:
+   ```
+   https://git.gocadmium.dev/mobile-app-group/appointmentschedulersdkflutter
+   ```
+4. Select version (e.g., "Up to Next Major" from `1.0.0`)
+5. Click **Add Package**
+6. Select target and click **Add Package** again
+
+### In Package.swift:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/eramitkumarsoni/AppointmentSchedulerSDKFlutter.git", from: "1.4.0")
-]
-```
-
-Then add it to your target dependencies:
-
-```swift
-targets: [
-    .target(
-        name: "YourTarget",
-        dependencies: [
-            .product(name: "AppointmentSchedulerSDKFlutter", package: "AppointmentSchedulerSDKFlutter")
-        ]
+    .package(
+        url: "https://git.gocadmium.dev/mobile-app-group/appointmentschedulersdkflutter.git",
+        from: "1.4.0"
     )
 ]
 ```
 
-## 🚀 Quick Start
+---
 
-### 1. Import the SDK
-
-```swift
-import AppointmentSchedulerSDKFlutter
-```
-
-### 2. Initialize in AppDelegate
+## 💻 Using in Your Code
 
 ```swift
-import UIKit
-import AppointmentSchedulerSDKFlutter
+import AppointmentSchedulerSDK
 
-@main
-class AppDelegate: UIResponder, UIApplicationDelegate {
-    
-    func application(
-        _ application: UIApplication,
-        didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
-    ) -> Bool {
-        // Initialize the Appointment Scheduler SDK
-        AppointmentSchedulerSDK.shared.initialize()
-        return true
-    }
-}
+// Initialize and use the scheduler
+let scheduler = AppointmentScheduler()
+scheduler.configure(apiKey: "your-api-key")
+
+// Present appointment view
+let appointmentVC = scheduler.presentAppointmentView()
+present(appointmentVC, animated: true)
 ```
-
-### 3. Show the Appointment Scheduler
-
-```swift
-import UIKit
-import AppointmentSchedulerSDKFlutter
-
-class ViewController: UIViewController {
-    
-    @IBAction func showSchedulerTapped(_ sender: UIButton) {
-        // Create a Flutter view controller
-        let flutterVC = AppointmentSchedulerSDK.shared.createViewController()
-        
-        // Present it modally
-        flutterVC.modalPresentationStyle = .fullScreen
-        present(flutterVC, animated: true)
-        
-        // Or push it in a navigation stack
-        // navigationController?.pushViewController(flutterVC, animated: true)
-    }
-}
-```
-
-## 🎯 Advanced Usage
-
-### Custom Initial Route
-
-```swift
-let flutterVC = AppointmentSchedulerSDK.shared.createViewController(withRoute: "/custom-route")
-present(flutterVC, animated: true)
-```
-
-### Multiple Engine Management
-
-For advanced use cases where you need multiple Flutter engines:
-
-```swift
-import AppointmentSchedulerSDKFlutter
-
-// Create a named engine
-let engine = FlutterEngineManager.shared.createEngine(named: "appointmentEngine")
-
-// Get an existing engine
-if let existingEngine = FlutterEngineManager.shared.getEngine(named: "appointmentEngine") {
-    // Use the engine
-}
-
-// Clean up when done
-FlutterEngineManager.shared.removeEngine(named: "appointmentEngine")
-```
-
-## 📋 Requirements
-
-- **iOS**: 13.0+
-- **Swift**: 5.9+
-- **Xcode**: 15.0+
-
-## 🔥 Firebase Integration
-
-This SDK includes Firebase Core support. Make sure to:
-
-1. Add your `GoogleService-Info.plist` to your iOS project
-2. Configure Firebase in your AppDelegate if needed
-
-```swift
-import Firebase
-
-func application(_ application: UIApplication, 
-                didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    // Initialize Firebase (if needed for your app)
-    FirebaseApp.configure()
-    
-    // Initialize Appointment Scheduler SDK
-    AppointmentSchedulerSDK.shared.initialize()
-    
-    return true
-}
-```
-
-## 📚 What's Included
-
-This package includes the following frameworks:
-
-### Core Frameworks
-- **App.xcframework** - Flutter App code
-- **Flutter.xcframework** - Flutter engine
-- **firebase_core** - Firebase Core plugin
-- **FirebaseCore** - Firebase Core SDK
-- **FirebaseCoreInternal** - Firebase internal components
-- **GoogleUtilities** - Google utilities
-
-### Plugin Frameworks
-- **audio_session** - Audio session management
-- **connectivity_plus** - Network connectivity
-- **file_picker** - File selection
-- **file_selector_ios** - iOS file selector
-- **flutter_secure_storage** - Secure storage
-- **get_thumbnail_video** - Video thumbnails
-- **image_gallery_saver_plus** - Save images to gallery
-- **image_picker_ios** - Image picker
-- **just_audio** - Audio playback
-- **media_kit_video** - Video player
-- **package_info_plus** - Package information
-- **path_provider_foundation** - Path utilities
-- **photo_manager** - Photo library management
-- **share_plus** - Share functionality
-- **sqflite_darwin** - SQLite database
-- **url_launcher_ios** - URL launching
-- **video_player_avfoundation** - Video playback
-- **volume_controller** - Volume control
-- **wakelock_plus** - Screen wakelock
-
-### UI Frameworks
-- **DKImagePickerController** - Image picker UI
-- **DKPhotoGallery** - Photo gallery UI
-- **SDWebImage** - Image loading and caching
-- **SwiftyGif** - GIF support
-- **libwebp** - WebP image format
-
-## 🔖 Version History
-
-### v1.3.0 (Latest)
-- ✅ Updated frameworks with latest Flutter code
-- ✅ Added Firebase support (FirebaseCore, FirebaseCoreInternal, GoogleUtilities)
-- ✅ UI improvements and bug fixes
-- ✅ Removed debug symbols to reduce package size
-
-### v1.2.0
-- ✅ Renamed components to match repository name
-- ✅ Improved package structure
-
-### v1.1.1
-- ✅ Fixed package naming issues
-
-### v1.1.0
-- ✅ Removed duplicate Firebase dependencies
-
-### v1.0.0
-- ✅ Initial release
-
-## 🐛 Troubleshooting
-
-### Build Issues
-
-If you encounter build issues:
-
-1. **Clean build folder**: `⌘ + Shift + K`
-2. **Delete derived data**
-3. **Reset package caches**: `File` → `Packages` → `Reset Package Caches`
-4. **Update packages**: `File` → `Packages` → `Update to Latest Package Versions`
-
-### Firebase Conflicts
-
-If you have conflicts with Firebase:
-
-- This package includes Firebase Core internally
-- Make sure you're not including conflicting Firebase versions in your main app
-- Use the same Firebase version across your app and this SDK
-
-## 📖 Documentation
-
-For more detailed documentation, visit the [main repository](https://github.com/eramitkumarsoni/AppointmentSchedulerSDKFlutter).
-
-## 📄 License
-
-See the LICENSE file in the repository for details.
-
-## 👥 Support
-
-For issues, questions, or contributions, please visit the [GitHub repository](https://github.com/eramitkumarsoni/AppointmentSchedulerSDKFlutter).
 
 ---
 
-**Made with ❤️ using Flutter and Swift**
+## 🔄 What the Setup Script Does
+
+The `spm_auth_setup.sh` script automatically:
+
+1. ✅ Configures your `~/.netrc` file with Git credentials
+2. ✅ Saves credentials locally (in `.spm_credentials` - gitignored)
+3. ✅ Sets correct file permissions for security
+4. ✅ Tests the connection to verify it works
+5. ✅ Ensures credentials won't be committed to Git
+
+**You only need to run it once!** (Unless credentials change)
+
+---
+
+## ❓ Troubleshooting
+
+### "Permission denied" when running script
+
+**Fix:**
+```bash
+chmod +x spm_auth_setup.sh
+./spm_auth_setup.sh
+```
+
+### "Authentication failed" in Xcode
+
+**Fix:**
+```bash
+# Run the setup script again
+./spm_auth_setup.sh
+
+# Then in Xcode:
+# File → Packages → Reset Package Caches
+```
+
+### "Could not resolve package dependencies"
+
+**Fix:**
+1. Check your internet connection
+2. Verify setup script completed successfully
+3. Try clearing Xcode's cache:
+   ```bash
+   rm -rf ~/Library/Developer/Xcode/DerivedData/
+   rm -rf ~/Library/Caches/org.swift.swiftpm/
+   ```
+4. Restart Xcode
+
+### Package not found
+
+**Fix:**
+- Ensure you ran `./spm_auth_setup.sh` successfully
+- Check that `~/.netrc` file exists: `ls -la ~/.netrc`
+- Verify credentials are correct
+
+---
+
+## 🔒 Security
+
+### What's Safe:
+
+- ✅ `.spm_credentials` file (gitignored - won't be committed)
+- ✅ `~/.netrc` file (600 permissions - only you can read)
+- ✅ Running `spm_auth_setup.sh` (it's safe, check the code!)
+
+### What to NEVER Do:
+
+- ❌ Don't commit `team_credentials.sh` to public repos
+- ❌ Don't share your personal tokens publicly
+- ❌ Don't commit `.spm_credentials` to Git
+- ❌ Don't give tokens write/admin permissions
+
+---
+
+## 🆘 Need Help?
+
+1. **Check if setup completed successfully:**
+   ```bash
+   git ls-remote https://git.gocadmium.dev/mobile-app-group/appointmentschedulersdkflutter.git
+   ```
+   
+   If this works, authentication is configured correctly.
+
+2. **Verify .netrc file:**
+   ```bash
+   cat ~/.netrc
+   ```
+   
+   Should show an entry for `git.gocadmium.dev`
+
+3. **Re-run setup:**
+   ```bash
+   ./spm_auth_setup.sh
+   ```
+
+4. **Contact your team lead** for team credentials or repository access
+
+---
+
+## 📞 Support
+
+**For package issues:**
+- Check this README
+- Contact package maintainer
+- Verify Git repository access
+
+**For access issues:**
+- Contact your team lead
+- Verify your Cadmium Git account has repository access
+
+---
+
+## 🔄 For Team Leads: Distributing to Your Team
+
+### Creating Team Credentials File:
+
+1. **Create a service account** on Cadmium Git:
+   - Username: `appointment-scheduler-bot` (or similar)
+   - Create access token with **read-only** permissions
+
+2. **Create the credentials file:**
+   ```bash
+   cp team_credentials.sh.template team_credentials.sh
+   ```
+
+3. **Edit with actual credentials:**
+   ```bash
+   nano team_credentials.sh
+   ```
+   
+   Replace:
+   ```bash
+   GIT_USERNAME="appointment-scheduler-bot"
+   GIT_TOKEN="actual_token_here"
+   ```
+
+4. **Distribute securely to team:**
+   - Encrypted email
+   - Secure file share (1Password, LastPass shared folder)
+   - Team chat (if private/encrypted)
+   - **NOT in public Git repository!**
+
+5. **Instruct team members:**
+   - Place `team_credentials.sh` in SPM package directory
+   - Run `./spm_auth_setup.sh`
+   - Select option 1
+
+---
+
+## 📚 Additional Documentation
+
+- [Complete Integration Guide](../IOS_INTEGRATION_GUIDE.md)
+- [Technical Flow Documentation](../SPM_PULL_FLOW.md)
+- [Package Documentation Index](../README_SPM_DOCS.md)
+
+---
+
+## ⚡ Quick Reference
+
+| Action | Command |
+|--------|---------|
+| **First-time setup** | `./spm_auth_setup.sh` |
+| **Re-configure** | `./spm_auth_setup.sh` (select 'y' to reconfigure) |
+| **Test connection** | `git ls-remote https://git.gocadmium.dev/mobile-app-group/appointmentschedulersdkflutter.git` |
+| **View saved credentials** | `cat .spm_credentials` |
+| **Remove credentials** | `rm .spm_credentials` then edit `~/.netrc` |
+
+---
+
+**Repository:** `git.gocadmium.dev/mobile-app-group/appointmentschedulersdkflutter`  
+**Last Updated:** January 2026  
+**Minimum iOS Version:** 13.0+

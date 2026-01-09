@@ -1,0 +1,44 @@
+# SPM Package .gitignore
+
+# Credentials - NEVER COMMIT THESE
+.spm_credentials
+team_credentials.sh
+*.token
+*.credentials
+
+# Xcode
+.DS_Store
+*.swp
+*.swo
+*~.nib
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+*.xccheckout
+*.moved-aside
+DerivedData/
+*.hmap
+*.ipa
+*.xcuserstate
+*.xcscmblueprint
+
+# Swift Package Manager
+.build/
+.swiftpm/
+Package.resolved
+
+# IDE
+.vscode/
+.idea/
+
+# Backup files
+*.backup
+*.bak
+.netrc.backup
