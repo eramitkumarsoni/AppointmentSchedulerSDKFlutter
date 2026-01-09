@@ -9,6 +9,7 @@ let package = Package(
     products: [
         .library(
             name: "AppointmentSchedulerSDKFlutter",
+            type: .dynamic,
             targets: ["AppointmentSchedulerSDKFlutter"]
         ),
     ],
